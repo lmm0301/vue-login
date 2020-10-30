@@ -30,8 +30,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ```bash   
  import 'lib-flexible'
  ```
-#### 由于flexible会动态给页面header中添加'<meta name='viewport' >'标签，所以务必请把目录 public/index.html 中的这个标签删除
-
+#### 由于flexible会动态给页面header中添加 meta name='viewport' 标签，所以务必请把目录 public/index.html 中的这个标签删除
 ### 3. 配置postcss-pxtorem
 #### 修改vue.config.js（vue-cli3 构建的项目比以前的精简许多，如果没有请在根目录新建vue.config.js文件）
  ``` bash
@@ -57,8 +56,10 @@ module.exports = {
         }
  ```
 ### 4.vue.js 使用 fastclick解决移动端click事件300毫秒延迟方法
-#### 1. npm install fastclick -S
-#### 2. 在main.js中引入 import FastClick from 'fastclick'
+  ``` bash
+ 1. npm install fastclick -S
+ 2. 在main.js中引入 import FastClick from 'fastclick'
+ ```
 ### FastClick的ios点击穿透解决方案
  ``` bash
 FastClick.prototype.focus = function(targetElement) {
